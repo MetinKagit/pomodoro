@@ -1,0 +1,143 @@
+#container {
+    /* border: 1px solid #ccc; */
+    border-radius: 5px;
+    width: 480px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    background: #f4f4f4;
+    /* position: relative; */
+    margin-left: 20px;
+  }
+
+  /* ---- Timer ---- */
+  #timer {
+    color: #5a9;
+    font-size: 50px;
+    margin: 10px auto;
+    border: 5px solid #a6dcb0;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    user-select: none;
+    cursor: default;
+    background: #f4fcf6;
+    transition: background 0.5s ease; 
+  }
+  #time {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+  }
+  #time span {
+    margin: 0 5px;
+  }
+  #filler {
+    background: #ddffcc;
+    height: 0px;
+    width: 200px;
+    position: absolute;
+    bottom: 0;
+  }
+
+  /* ---- Inputs ---- */
+  #inputs {
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: 14px;
+  }
+  #inputs input {
+    width: 60px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+  }
+
+  /* ---- Buttons ---- */
+  #buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  #buttons button {
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 5px;
+    width: 90px;
+    font-size: 14px;
+    height: 50px;
+    border-radius: 50px;
+  }
+  #buttons .start {
+    background: #88c999;
+  }
+  #buttons .start:hover {
+    background: #68e78a;
+  }
+  #buttons .pause {
+    background: #8bbdf0;
+  }
+  #buttons .stop {
+    background: #f48a8a;
+  }
+  #buttons .stop:hover {
+    background: #ff6969;
+  }
+
+  /* ---- History Button & Dropdown ---- */
+  .historyBtn {
+    background: #8bbdf0; 
+    color: #fff;
+    cursor: pointer;
+    padding: 5px;
+    width: 90px;
+    font-size: 14px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+  }
+  .historyBtn:hover {
+    background: #58acff; 
+  }
+
+  /* The container for the dropdown */
+  .dropdownHistory {
+    position: relative;   
+    display: inline-block;
+  }
+
+  /* The dropdown itself */
+  .dropdown-content-history {
+    display: none;             
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+  }
+  .dropdown-content-history a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-content-history a:hover {
+    background-color: #f1f1f1;
+  }
+
+  .dropdownHistory:hover .dropdown-content-history {
+    display: block;
+  }

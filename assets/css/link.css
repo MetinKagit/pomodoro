@@ -1,0 +1,128 @@
+.dropbtn {
+    background-color: #a6dcb0;
+    color: #555;
+    padding: 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    top: 20px;
+    margin-left: 30px; 
+    border-radius: 5px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #70d089;
+    color: white;
+}
+
+.add-link {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #a6dcb0;
+    color: #555;
+    border: none;
+    padding: 10px 16px;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+}
+
+.add-link:hover {
+    background-color: #70d089;
+    color: white
+}
+
+.dropdown-content {
+    padding-top: 40px;
+
+    position: relative;
+}
+
+#add-link-form {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    min-width: 200px;
+    top: 100%;
+    left: 0;
+}
+
+#add-link-form input {
+    display: block;
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-bottom: 8px;
+}
+
+#add-link-form button {
+    background-color: #a6dcb0;
+    color: #555;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 100%;
+}
+
+#add-link-form button:hover {
+    background-color: #70d089;
+    color: white
+}
+
+.link-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px 8px;
+}
+
+.delete-btn {
+    background-color: rgb(223, 223, 223);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    padding: 2px 6px;
+    margin-left: 8px;
+    border-radius: 4px;
+}
+
+.delete-btn:hover {
+    background-color: rgb(157, 157, 157);
+}

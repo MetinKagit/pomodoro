@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    /* Use CSS Grid to structure the entire page:
+       - auto row for the header
+       - auto row for the top row of blocks
+       - 1fr row for the main content (left & right columns)
+       - auto row for the footer
+    */
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    min-height: 100vh;
+  }
+
+  /* Header */
+  header {
+    background-color: #a6dcb0;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  /* Top row just below the header */
+  .top-row {
+    display: grid;
+    grid-template-columns: 80px 1fr 80px; /* left square, wide center, right square */
+    gap: 1rem;
+    padding: 1rem;
+  }
+  /* Style each block in the top row */
+  .top-row > div {
+    background-color: #ffffff; /* or any color you like */
+    height: 60px; /* example fixed height; adjust as needed */
+  }
+
+  /* Main content area */
+  .main-content {
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    gap: 1rem;
+    padding: 1rem;
+
+  /* Left column subdivided into two stacked blocks */
+  .left-col {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+  }
+  .left-col > div {
+    background-color: #ffffff;
+  }
+
+  /* Right column (one large block) */
+  .right-col {
+    background-color: #ffffff;
+    
+  }
+
+  /* Footer */
+  footer {
+    background-color: #444;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+  }}
